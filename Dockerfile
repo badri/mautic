@@ -15,6 +15,6 @@ WORKDIR /var/www/symfony
 
 RUN mkdir -p /var/www/symfony/translations
 
-RUN composer install --no-dev --prefer-dist --no-interaction --no-ansi --optimize-autoloader
+RUN COMPOSER_MEMORY_LIMIT=-1 composer install --no-dev --prefer-dist --no-interaction --no-ansi --optimize-autoloader
 
 USER 1001
