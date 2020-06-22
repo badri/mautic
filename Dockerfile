@@ -1,5 +1,7 @@
 FROM lakshminp/php-base:7.2
 
+RUN docker-php-ext-install sockets
+
 COPY . /var/www/symfony
 
 RUN useradd -u 1001 -r -g 0 -d /app -s /bin/bash -c "Default Application User" default \
