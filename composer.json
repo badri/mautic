@@ -135,12 +135,10 @@
   ],
   "scripts": {
     "post-install-cmd": [
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
     ],
     "post-update-cmd": [
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
     ],
     "test": "bin/phpunit --bootstrap vendor/autoload.php --configuration app/phpunit.xml.dist"
   },
